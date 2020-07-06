@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Sen:wght@400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Sacramento&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sen', sans-serif;
-    /* font-family: 'Maven Pro', sans-serif; */
     scroll-behavior: smooth;
 }
 
@@ -18,7 +17,7 @@
     --txt5:#444;
     --btn-txt: #fff;
     --navbg: #fff;
-    --bg: #f5f5f5;
+    --bg: #fafafa;
     --btn-bg: #5252ff;
     --shadow: #999;
 }
@@ -43,97 +42,6 @@ body p {
 .box {
     position:relative;
     z-index: 2;
-}
-.box i {
-    position:absolute;
-    top:130px;
-    left:30%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 5s linear infinite;
-}
-.box i:nth-child(2) {
-    position:absolute;
-    top:430px;
-    left:50%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 8s linear infinite;
-}
-.box i:nth-child(3) {
-    position:absolute;
-    top:330px;
-    left:20%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 3s linear infinite;
-}
-.box i:nth-child(4) {
-    position:absolute;
-    top:590px;
-    left:80%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 9s linear infinite;
-}
-.box i:nth-child(5) {
-    position:absolute;
-    top:570px;
-    left:90%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 8s linear infinite;
-}
-.box i:nth-child(6) {
-    position:absolute;
-    top:830px;
-    left:10%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 9s linear infinite;
-}
-.box i:nth-child(7) {
-    position:absolute;
-    top:730px;
-    left:25%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 6s linear infinite;
-}
-.box i:nth-child(8) {
-    position:absolute;
-    top:960px;
-    left:40%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 7s linear infinite;
-}
-.box i:nth-child(9) {
-    position:absolute;
-    top:2000px;
-    left:60%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 8s linear infinite;
-}
-.box i:nth-child(10) {
-    position:absolute;
-    top:2100px;
-    left:50%;
-    color:#5252ff;
-    font-size:30px;
-    animation: animate 6s linear infinite;
-}
-
-@keyframes animate {
-    0%{
-        transform: scale(0) translateY(0) rotate(0);
-        opacity:1;
-    }
-    100%{
-        transform: scale(1.3) translateY(-90px) rotate(360deg);
-        opacity:0;
-    }
 }
 
 header {
@@ -167,6 +75,7 @@ header span {
     margin-left: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
 }
 
 header ul {
@@ -272,7 +181,6 @@ input:checked[type="checkbox"]::before {
 }
 
 #home p {
-    /* color: var(--txt); */
     line-height: 22px;
     margin-bottom: 50px;   
 }
