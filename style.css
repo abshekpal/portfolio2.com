@@ -619,7 +619,7 @@ input:checked[type="checkbox"]::before {
 
 @media (max-width:600px) {
     header {
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
     header .logo {
@@ -647,7 +647,7 @@ input:checked[type="checkbox"]::before {
 
 
     #home, #about, #services, #contact {
-        padding: 100px 40px 40px;
+        padding: 100px 20px 40px;
     }
 
     #home h5, #about h5, #services h5 {
