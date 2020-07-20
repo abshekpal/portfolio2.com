@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek • Web Designer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="imag/png" href="Images/fav-icon.png"><!-- ***site icon*** -->
+    <link rel="shortcut icon" type="image/png" href="image/fav-icon.png"><!-- ***site icon*** -->
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/ed8d1bbf30.js" crossorigin="anonymous"></script>
-
 </head>
 
-<body>
+<body onload="myPrevloader()">
+    
+    <div class="loader-container" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- ********** Navbar **********  -->
     <header id="header">
         <a href="#" class="logo">Abhishek Palekar<span>Web Designer</span></a>
         <ul>
@@ -45,7 +50,7 @@
                 <a href="https://in.pinterest.com/"><i class="fab fa-pinterest"></i></a>
             </div>
         </div>
-        <img src="images/hero-illustration.svg" alt="hero" width="100%">
+        <img src="image/hero-illustration.svg" alt="hero" width="100%">
     </section>
 
     <!-- ********** ABOUT SECTION ********** -->
@@ -150,6 +155,7 @@
         </div>
     </section>
 
+
     <!-- ********** CONTACT SECTION ********** -->
     <section id="contact"> 
         <div class="content">
@@ -165,19 +171,23 @@
         </div>
     </section>
 
+    <script>
 
+        // Preloader
+        var preloader = document.getElementById('loading');
+        function myPrevloader(){
+            preloader.style.display='none';
+        }
 
-
-    <script type="text/javascript">
+        // Navbar Toggle
         function toggle() {
             var header = document.getElementById("header")
             header.classList.toggle('active')
         }
-    </script>
 
-    <script>
+
+        // For light and dark modes
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
         const switchTheme = (e) => {
             if (e.target.checked) {
                 document.documentElement.setAttribute('data-theme', 'dark');
@@ -187,9 +197,8 @@
                 localStorage.setItem('theme', 'light');
             }
         }
-
+        // For current theme
         const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
         if (currentTheme) {
             document.documentElement.setAttribute('data-theme', currentTheme);
             if (currentTheme === 'dark') {
@@ -197,9 +206,8 @@
             }
         }
         toggleSwitch.addEventListener('change', switchTheme);
-    </script>
 
-    <script type="text/javascript">
+        // For navbar animation
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
 
@@ -209,11 +217,10 @@
             } else {
                 document.getElementById("header").style.top = "-60px";
             }
-
             prevScrollpos = currentScrollpos;
         }
 
-
+        // For box-shadow at navbar animation
         window.addEventListener('scroll', function () {
             let header = document.querySelector('header');
             let windowPosition = window.scrollY > 0;
