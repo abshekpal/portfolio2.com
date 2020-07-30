@@ -391,7 +391,52 @@ input:checked[type="checkbox"]::before {
 }
 #services .container .box:hover h3, #services .container .box:hover p {
     color:#fff;
+}
 
+/* ********** WORKS ********** */
+#works{
+    width:100%;
+    background: var(--bg);
+    padding: 50px 100px;   
+}
+
+#works .content{
+    width:100%;
+    margin-right: 20px;
+    
+    text-align: center;
+}
+#works h5 {
+    color: var(--txt3);
+    font-size: 20px;
+    font-weight: 600;
+}
+#works h1 {
+    color:var(--txt);
+    font-weight: 700;
+    font-size: 50px;
+    padding:10px 0 20px;   
+}
+#works p{
+    padding:0 90px
+}
+.swiper-container {
+    width:100%;
+    height:100vh;    
+}
+
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.swiper-slide img{
+    width:100%;
+   
+   padding:0 60px;
 }
 
 
@@ -412,12 +457,13 @@ input:checked[type="checkbox"]::before {
     width:100px;
     height:100px;
     color:#000;
-    background:#c5c5c5;
+    background:#d8d8d8;
     text-align: center;
     line-height: 100px;
     cursor: pointer;
     font-size:40px;
     margin:10px;
+    border-radius: 10px;
 }
 
 
@@ -573,19 +619,19 @@ input:checked[type="checkbox"]::before {
         justify-content:space-evenly;
     }
 
-    #home, #about, #services, #contact {
+    #home, #about, #services, #works, #contact {
         padding: 100px 20px 40px;
     }
 
-    #home h5, #about h5, #services h5 {
+    #home h5, #about h5, #services h5, #works h5 {
         font-size: 18px;
     }
 
-    #home h1, #about h1, #services h1, #contact h1 {
+    #home h1, #about h1, #services h1, #works h1, #contact h1 {
         font-size: 30px;
     }
 
-    #home p, #about p, #contact p {
+    #home p, #about p, #works p, #contact p {
         font-size: 15px;
     }
     #about .content p {
@@ -604,13 +650,23 @@ input:checked[type="checkbox"]::before {
         display: flex;
         justify-content: center;
     }
-    
+    #works p{
+        padding:0;
+    }
+    .swiper-slide img{
+       padding:0;
+    }
+    #contact .content-2{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+    }
     #contact .content-2 i {
-        width:50px;
-        height:50px;
+        width:60px;
+        height:60px;
         text-align: center;
-        line-height: 50px;
-        font-size:20px;
+        line-height: 60px;
+        font-size:24px;
         margin-top: 20px;
     }
 }
