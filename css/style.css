@@ -422,7 +422,7 @@ input:checked[type="checkbox"]::before {
 }
 .swiper-container {
     width:100%;
-    height:100vh;    
+    height:100%;    
 }
 
 .swiper-slide{
@@ -583,6 +583,9 @@ input:checked[type="checkbox"]::before {
     #about .content-2 {
         margin-top:50px;
     }
+    .swiper-slide img{
+        padding:50px 0;
+     }
     #contact {
         display:flex;
         flex-direction: column;
@@ -653,8 +656,11 @@ input:checked[type="checkbox"]::before {
     #works p{
         padding:0;
     }
+    .swiper-slide{
+        height:100px;
+    }
     .swiper-slide img{
-       padding:0;
+       padding:20px 0;
     }
     #contact .content-2{
         width:100%;
