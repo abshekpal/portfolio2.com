@@ -397,13 +397,12 @@ input:checked[type="checkbox"]::before {
 #works{
     width:100%;
     background: var(--bg);
-    padding: 50px 100px;   
+    padding: 50px 0px;   
 }
 
 #works .content{
     width:100%;
     margin-right: 20px;
-    
     text-align: center;
 }
 #works h5 {
@@ -420,23 +419,13 @@ input:checked[type="checkbox"]::before {
 #works p{
     padding:0 90px
 }
-.swiper-container {
-    width:100%;
-    height:100%;    
-}
-
-.swiper-slide{
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.owl-carousel div{
     width:100%;
 }
-.swiper-slide img{
-    width:100%;
-   
-   padding:0 60px;
+.item{
+    width:50%;
+    display:flex;
+    justify-content:center;
 }
 
 
@@ -570,6 +559,9 @@ input:checked[type="checkbox"]::before {
         width: 100%;
         margin-top: 50px;
     }
+    #home p img{
+        width:20px;
+    }
     #about {
         display: block;
         padding: 100px 50px 50px;
@@ -622,7 +614,7 @@ input:checked[type="checkbox"]::before {
         justify-content:space-evenly;
     }
 
-    #home, #about, #services, #works, #contact {
+    #home, #about, #services, #contact {
         padding: 100px 20px 40px;
     }
 
