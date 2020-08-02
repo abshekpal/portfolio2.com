@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek • Web Designer</title>
-    <link rel="shortcut icon" type="image/png" href="image/fav-icon.png"><!-- ***site icon*** -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="image/fav-icon.png">
+    <link rel="stylesheet" href="css/style.css"> <!-- *** main css *** -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/ed8d1bbf30.js" crossorigin="anonymous"></script>
@@ -15,12 +15,12 @@
 <body onload="myPrevloader()">
 
     <div class="loader-container" id="loading">
-        <div class="loader"></div>
+        <div class="loader"><img src="image/PfJ9.gif" width="140px" alt=""></div>
     </div>
 
     <!-- ********** Navbar **********  -->
     <header id="header">
-        <a href="#" class="logo">Abhishek Palekar<span>Web Designer</span></a>
+        <a href="#" class="logo">Abhishek Palekar</a>
         <ul>
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
@@ -53,7 +53,7 @@
                 <a href="https://in.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
             </div>
         </div>
-        <img src="image/hero-illustration.svg" alt="hero" width="100%">
+        <img src="image/hero-illustration.svg" class="hero" alt="hero" width="100%">
     </section>
 
     <!-- ********** ABOUT SECTION ********** -->
@@ -216,23 +216,30 @@
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script>
+        // For carousel
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
             stagePadding: 50,
             loop:true,
             margin:20,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:1
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:1
+                    }
                 }
-            }
-        })
+            })
+        });
+
+        // For active link color
+        $('li').click(function() {
+            $(this).siblings().find('a').removeClass('focus');
+            $(this).find('a').addClass('focus');
         });
     </script>
 </body>
