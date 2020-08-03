@@ -17,6 +17,7 @@
     --btn-txt: #fff;
     --navbg: #fff;
     --bg: #fff;
+    --contbg:#f5f5f5;
     --btn-bg: #5252ff;
     --shadow: #999;
 }
@@ -27,7 +28,7 @@
     --txt4: #f1f1f1;
     --txt5: #bbbbbb;
     --navbg: #1E1F26;
-    /* --bg: #100E17; */
+    --contbg:#1b1b1b;
     --bg: #121212;
     --shadow: #000;
 }
@@ -38,7 +39,7 @@ body a {
 
 body p {
     color: var(--txt5);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* Preloader */
@@ -230,28 +231,8 @@ input:checked[type="checkbox"]::before {
     color: var(--txt3);
 }
 
-#home .btn i {
-    margin-right: 10px;
-    font-size: 14px;
-}
-
-#home .btn {
-    border: 2px solid var(--txt3);
-    background: var(--txt3);
-    color: var(--btn-txt);
-    border-radius: 25px;
-    box-shadow: 0 0 5px var(--shadow);
-    font-weight: 500;
-    padding: 7px 18px;
-}
-
-#home .btn:hover {
-    background: var(--bg);
-    color: var(--txt3);
-}
-
 /* ********** ABOUT ********** */
-#about {
+#skills {
     background: var(--bg);
     padding: 50px 100px;
     display: flex;
@@ -259,27 +240,46 @@ input:checked[type="checkbox"]::before {
     align-items: center;
 }
 
-#about .content {
+#skills .content {
     padding-right: 80px;
 }
 
-#about h5 {
+#skills h5 {
     color: var(--txt3);
     font-size: 20px;
     font-weight: 600;
 }
 
-#about h1 {
+#skills h1 {
     color: var(--txt);
     font-weight: 700;
     font-size: 50px;
     padding: 10px 0 20px;
 }
 
-#about .info-1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+#skills .content p {
+    margin-bottom: 30px;
+}
+
+#skills .btn i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#skills a {
+    border: 2px solid var(--txt3);
+    background: var(--txt3);
+    color: var(--btn-txt);
+    border-radius: 5px;
+    box-shadow: 0 0px 10px var(--shadow);
+    font-weight: 500;
+    padding: 7px 13px;
+    font-size: 14px;
+}
+
+#skills a:hover {
+    background: var(--bg);
+    color: var(--txt3);
 }
 
 
@@ -321,7 +321,7 @@ input:checked[type="checkbox"]::before {
 .skillbar .jsbar div,
 .psbar div,
 .acbar div {
-    width: 80%;
+    width: 85%;
     height: 100%;
     background: #5252ff;
     border-radius: 10px;
@@ -360,7 +360,7 @@ input:checked[type="checkbox"]::before {
 #services .container .box {
     position: relative;
     width: 320px;
-    padding: 100px 40px 60px;
+    padding: 100px 40px 40px;
     margin: 30px 0;
     box-shadow: 0 0 5px var(--shadow);
 }
@@ -449,10 +449,6 @@ input:checked[type="checkbox"]::before {
     padding: 10px 0 20px;
 }
 
-#works p {
-    padding: 0 90px
-}
-
 .owl-carousel div {
     width: 100%;
 }
@@ -466,31 +462,61 @@ input:checked[type="checkbox"]::before {
 
 /* ********** CONTACT ********** */
 #contact {
-    background: var(--bg);
+    background: var(--contbg);
     padding: 50px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-#contact .content h1 {
-    color: var(--txt);
-    font-weight: 700;
-    font-size: 50px;
+#contact .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-#contact .content-2 i {
-    width: 100px;
-    height: 100px;
-    color: #000;
-    background: #d8d8d8;
-    text-align: center;
-    line-height: 100px;
-    cursor: pointer;
-    font-size: 40px;
-    margin: 10px;
-    border-radius: 10px;
+#contact .me {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 9px #000;
 }
+
+#contact .content-1 img {
+    margin-bottom: 5px;
+}
+
+#contact .content-1 p {
+    line-height: 17px;
+}
+
+#contact .content-2 h4 {
+    margin-bottom: 10px;
+    color: var(--txt3);
+
+}
+
+#contact .content-2 a {
+    padding-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--txt);
+    font-size: 20px;
+}
+
+#contact .content-2 a:hover {
+    cursor: pointer;
+    color: var(--txt3);
+}
+
+/* ********** FOOTER ********** */
+.footer {
+    background: var(--bg);
+    color: var(--txt);
+    text-align: center;
+    padding: 10px 0;
+}
+
+
 
 
 /* Media Querys */
@@ -601,12 +627,12 @@ input:checked[type="checkbox"]::before {
         width: 20px;
     }
 
-    #about {
+    #skills {
         display: block;
         padding: 100px 50px 50px;
     }
 
-    #about .content {
+    #skills .content {
         padding-right: 0px;
     }
 
@@ -614,7 +640,7 @@ input:checked[type="checkbox"]::before {
         width: 100%;
     }
 
-    #about .content-2 {
+    #skills .content-2 {
         margin-top: 50px;
     }
 
@@ -626,7 +652,7 @@ input:checked[type="checkbox"]::before {
         display: flex;
         justify-content: center;
     }
-    
+
     #contact {
         display: flex;
         flex-direction: column;
@@ -655,21 +681,21 @@ input:checked[type="checkbox"]::before {
     }
 
     #home,
-    #about,
+    #skills,
     #services,
     #contact {
         padding: 100px 20px 40px;
     }
 
     #home h5,
-    #about h5,
+    #skills h5,
     #services h5,
     #works h5 {
         font-size: 18px;
     }
 
     #home h1,
-    #about h1,
+    #skills h1,
     #services h1,
     #works h1,
     #contact h1 {
@@ -677,26 +703,30 @@ input:checked[type="checkbox"]::before {
     }
 
     #home p,
-    #about p,
+    #skills p,
     #works p,
     #contact p {
         font-size: 15px;
     }
 
-    #about .content p {
+    #home .social-icons i {
+        padding-right: 0;
+    }
+
+    #skills .content p {
         padding-bottom: 10px;
     }
 
-    #about .info-1 {
+    #skills .info-1 {
         display: block;
     }
 
-    #about .info-1 p,
+    #skills .info-1 p,
     .info-2 p {
         padding: 10px 0;
     }
 
-    #about .info-1 {
+    #skills .info-1 {
         padding: 0;
     }
 
@@ -717,18 +747,25 @@ input:checked[type="checkbox"]::before {
         padding: 20px 0;
     }
 
-    #contact .content-2 {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
+    #contact .container {
+        display: block;
     }
 
-    #contact .content-2 i {
-        width: 60px;
-        height: 60px;
+    #contact .container .content-1 {
         text-align: center;
-        line-height: 60px;
-        font-size: 24px;
-        margin-top: 20px;
+    }
+
+    #contact .content-2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #contact .container .content-2 a {
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    #contact .content-2 .social-icons {
+        display: inline;
     }
 }
