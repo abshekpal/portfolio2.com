@@ -39,7 +39,6 @@ body a {
 
 body p {
     color: var(--txt5);
-    font-size: 15px;
 }
 
 /* Preloader */
@@ -486,7 +485,7 @@ input:checked[type="checkbox"]::before {
 }
 
 #contact .content-1 p {
-    line-height: 17px;
+    line-height: 20px;
 }
 
 #contact .content-2 h4 {
