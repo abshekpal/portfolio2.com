@@ -461,7 +461,7 @@ input:checked[type="checkbox"]::before {
 
 /* ********** CONTACT ********** */
 #contact {
-    background: var(--contbg);
+    background: var(--bg);
     padding: 50px 100px;
     display: flex;
     justify-content: space-evenly;
@@ -488,14 +488,15 @@ input:checked[type="checkbox"]::before {
     line-height: 20px;
 }
 
-#contact .content-2 h4 {
-    margin-bottom: 10px;
-    color: var(--txt3);
-
+#contact .container .content-2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #contact .content-2 a {
-    padding-right: 20px;
+    padding-left: 20px;
     cursor: pointer;
     transition: 0.5s;
     color: var(--txt);
@@ -507,14 +508,9 @@ input:checked[type="checkbox"]::before {
     color: var(--txt3);
 }
 
-/* ********** FOOTER ********** */
-.footer {
-    background: var(--bg);
-    color: var(--txt);
-    text-align: center;
-    padding: 10px 0;
+#contact .content-2 p {
+    margin-top: 15px;
 }
-
 
 
 
@@ -558,7 +554,7 @@ input:checked[type="checkbox"]::before {
 
     header ul li a {
         margin: 5px 0;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     header .toggle {
@@ -657,6 +653,11 @@ input:checked[type="checkbox"]::before {
         flex-direction: column;
         align-items: center;
     }
+    
+    #contact .container .content-2 {
+        display: flex;
+        align-items: center;
+    }
 
 }
 
@@ -667,7 +668,7 @@ input:checked[type="checkbox"]::before {
 
     header ul li a {
         margin: 5px 0;
-        font-size: 17px;
+        font-size: 15px;
     }
 
     #home .content {
@@ -736,6 +737,7 @@ input:checked[type="checkbox"]::before {
 
     #works p {
         padding: 0;
+        margin-bottom: 20px;;
     }
 
     .swiper-slide {
@@ -755,8 +757,11 @@ input:checked[type="checkbox"]::before {
     }
 
     #contact .content-2 {
+        width:100%;
         text-align: center;
-        padding: 20px;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
     }
 
     #contact .container .content-2 a {
