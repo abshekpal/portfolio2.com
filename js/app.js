@@ -1,8 +1,3 @@
-// Preloader
-var preloader = document.getElementById('loading');
-function myPrevloader(){
-    preloader.style.display='none';
-}
 
 // Navbar Toggle
 function toggle() {

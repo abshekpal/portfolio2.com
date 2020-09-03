@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/style.css"> <!-- *** main css *** -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/ed8d1bbf30.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="myPrevloader()">
+<body>
 
 
     <!-- ********** Navbar **********  -->
@@ -53,18 +54,17 @@
 
     <!-- ********** SKILL SECTION ********** -->
     <section id="skills">
-        <div class="content">
+        <div class="content" data-aos="fade-up">
             <h5>My Expertise</h5>
             <h1>My Skills</h1>
             <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.
                 As a web designer my objective is to make a positive impact on clients, co-workers, and the internet
                 using my skills and experience to design compelling and attractive websites.
             </p>
-            <a href="./image/my cv.pdf" target="_blank" class="btn" type="button">
+            <a href="./image/my cv.pdf" target="_blank" class="btn" type="button" >
                 <i class="fas fa-download"></i>Download CV</a>
-
         </div>
-        <div class="content-2">
+        <div class="content-2" data-aos="fade-up" data-aos-delay="500">
             <div class="skillbar">
                 <div class="skill-name">
                     <h6>HTML</h6>
@@ -115,25 +115,25 @@
 
     <!-- ********** SERVICES SECTION ********** -->
     <section id="services">
-        <div class="content">
+        <div class="content" data-aos="fade-up">
             <h5>Services Offer By Me</h5>
             <h1>SERVICES</h1>
         </div>
         <div class="content-2">
             <div class="container">
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-delay="500">
                     <h2>#1</h2>
                     <h3>Creative Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt, repellendus
                         quibusdam id exercitationem. Cupiditate earum repellat quam natus.</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-delay="800">
                     <h2>#2</h2>
                     <h3>Clean Coding</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt, repellendus
                         quibusdam id exercitationem. Cupiditate earum repellat quam natus.</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-delay="1100">
                     <h2>#3</h2>
                     <h3>User Interface</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt, repellendus
@@ -143,19 +143,19 @@
         </div>
         <div class="content-2">
             <div class="container">
-                <div class="box">
+                <div class="box" data-aos="fade-up">
                     <h2>#4</h2>
                     <h3>User Experience</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt, repellendus
                         quibusdam id exercitationem. Cupiditate earum repellat quam natus.</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-delay="500">
                     <h2>#5</h2>
                     <h3>Landing Page Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt, repellendus
                         quibusdam id exercitationem. Cupiditate earum repellat quam natus.</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-up" data-aos-delay="800">
                     <h2>#6</h2>
                     <h3>Fast Support</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt, repellendus
@@ -166,7 +166,7 @@
     </section>
 
     <section id="works">
-        <div class="content">
+        <div class="content" data-aos="fade-up">
             <h5>Works Done By Me</h5>
             <h1>My Works</h1>
             <p>With the help of my small experiences, These are all some works
@@ -242,6 +242,14 @@
             $(this).siblings().find('a').removeClass('focus');
             $(this).find('a').addClass('focus');
         });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset:200,
+        duration: 1000
+      });
     </script>
 </body>
 
