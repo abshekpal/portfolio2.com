@@ -786,7 +786,7 @@ input:checked[type="checkbox"]::before {
     }
 
     #contact h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     #contact .form p {
@@ -796,7 +796,6 @@ input:checked[type="checkbox"]::before {
     #contact .container .content-1 {
         text-align: center;
     }
-
 
     #contact .content-2 {
         width:100%;
