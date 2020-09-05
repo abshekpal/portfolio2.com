@@ -731,8 +731,7 @@ input:checked[type="checkbox"]::before {
     #home h1,
     #skills h1,
     #services h1,
-    #works h1,
-    #contact h1 {
+    #works h1{
         font-size: 33px;
     }
 
@@ -784,6 +783,10 @@ input:checked[type="checkbox"]::before {
 
     #contact .container {
         display: block;
+    }
+
+    #contact h1 {
+        font-size: 30px;
     }
 
     #contact .form p {
