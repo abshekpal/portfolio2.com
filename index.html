@@ -190,9 +190,18 @@
     <!-- ********** CONTACT SECTION ********** -->
 
     <section id="contact">
+        <div class="form" data-aos="fade-up" data-aos-delay="500">
+            <i class="fa fa-paper-plane-o fa-2x" aria-hidden="true"></i>
+            <h1>Are you interested ?</h1>
+            <p>Whether you have an interesting project or just want to say hi, feel free to send a message.</p>
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Email address">
+            <textarea name="" id="" cols="auto" rows="3" placeholder="Message"></textarea>
+            <input type="button" value="Submit" class="submit">
+        </div>
         <div class="container">
             <div class="content-1">
-                <a href="#" class="logo">Abhishek</a>
+                <a href="#" class="logo">Abhishek.</a>
                 <p>+918095892947</p>
                 <p>abhishekpalekar23@gmail.com</p>
             </div>
@@ -220,9 +229,12 @@
         // For carousel
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
-                stagePadding: 50,
+                stagePadding: 100,
                 loop: true,
                 margin: 20,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
                 responsive: {
                     0: {
                         items: 1
@@ -246,7 +258,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        once: true,
+        
         offset:200,
         duration: 1000
       });
