@@ -372,7 +372,7 @@ input:checked[type="checkbox"]::before {
     transition: 0.5s;
 }
 
-#services .container h2 {
+#services .container img {
     position: absolute;
     left: 40px;
     top: 60px;
@@ -383,10 +383,10 @@ input:checked[type="checkbox"]::before {
     transition: 0.5s;
 }
 
-#services .container .box:hover h2 {
+#services .container .box:hover img {
     opacity: 1;
     color: #fff;
-    transform: translateY(-40px);
+    transform: translateY(-30px);
 }
 
 #services .container .box h3 {
