@@ -20,6 +20,7 @@
     --contbg:#f5f5f5;
     --btn-bg: #5252ff;
     --shadow: #999;
+    --input: #eeeeee;
 }
 
 [data-theme="dark"] {
@@ -31,6 +32,7 @@
     --contbg:#1b1b1b;
     --bg: #121212;
     --shadow: #000;
+    --input:#2b2b2b;
 }
 
 body a {
@@ -484,15 +486,17 @@ input:checked[type="checkbox"]::before {
     width:300px;
     padding:10px;
     margin:10px 0px;
-    border:none;
-    background:#e7e7e7;
+    background:var(--input);
     border-radius:3px;
+    border:none;
+    box-sizing: border-box;
 }
 
 #contact .form .submit {
     background:#5252ff;
     color:var(--btn-txt);
 }
+
 #contact .container {
     width: 100%;
     display: flex;
@@ -546,6 +550,18 @@ input:checked[type="checkbox"]::before {
     margin-top: 15px;
 }
 
+.is-invalid {
+    color:red;
+    font-size:13px;
+    text-align: center;
+}
+
+.wrong {
+    border:1px solid #fd2f2f !important;
+}
+.right {
+    border:1px solid #4ccc4c !important;
+}
 
 
 /* Media Querys */
