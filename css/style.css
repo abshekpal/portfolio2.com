@@ -490,6 +490,7 @@ input:checked[type="checkbox"]::before {
     border-radius:3px;
     border:none;
     box-sizing: border-box;
+    color:var(--text);
 }
 
 #contact .form .submit {
@@ -548,6 +549,10 @@ input:checked[type="checkbox"]::before {
 #contact .content-2 p {
     font-size:15px;
     margin-top: 15px;
+}
+
+#contact input[type="text"]:focus, textarea:focus {
+    color:var(--txt);
 }
 
 .is-invalid {

@@ -36,7 +36,7 @@ function validateEmail(){
 
 function validateMessage() {
     const message = document.getElementById('message');
-    const re = /^[a-zA-Z0-9]{2,300}$/;
+    const re = /^[a-zA-Z0-9 ]{2,300}$/;
 
     if(!re.test(message.value)) {
         document.getElementById('msgfeedback').innerHTML = "Enter valid message";
@@ -48,8 +48,4 @@ function validateMessage() {
         message.classList.remove('wrong');
         message.classList.add('right');
     }
-}
-
-function showAlert() {
-    alert("hi");
 }
