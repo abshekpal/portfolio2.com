@@ -1,3 +1,13 @@
+// Scrollbar
+window.onscroll = function(){
+    var pos = document.documentElement.scrollTop;
+    var calc_height = document.documentElement.scrollHeight-
+                    document.documentElement.clientHeight;
+    var scroll = pos * 100 / calc_height;
+    document.getElementById("progress").style.width = scroll + "%"; 
+}
+
+
 
 // Navbar Toggle
 function toggle() {
@@ -28,17 +38,17 @@ if (currentTheme) {
 toggleSwitch.addEventListener('change', switchTheme);
 
 // For navbar animation
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function () {
 
-    var currentScrollpos = window.pageYOffset;
-    if (prevScrollpos > currentScrollpos) {
-        document.getElementById("header").style.top = "0";
-    } else {
-        document.getElementById("header").style.top = "-60px";
-    }
-    prevScrollpos = currentScrollpos;
-}
+//     var currentScrollpos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollpos) {
+//         document.getElementById("header").style.top = "0";
+//     } else {
+//         document.getElementById("header").style.top = "-60px";
+//     }
+//     prevScrollpos = currentScrollpos;
+// }
 
 // For box-shadow at navbar animation
 window.addEventListener('scroll', function () {

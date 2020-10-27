@@ -1,3 +1,5 @@
+
+
 document.getElementById('name').addEventListener('blur', validateName);
 document.getElementById('email').addEventListener('blur', validateEmail);
 document.getElementById('message').addEventListener('blur', validateMessage);
